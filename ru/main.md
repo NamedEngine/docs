@@ -5,7 +5,7 @@
 * [Руководство по написанию кода в draw.io](guides/drawio.md)
 ## Документация
 * Типы блоков
-* Типы данных
+* [Типы данных](docs/types.md)
 * [Классы (Class)](docs/classes.md)
 * [Переменные (Variable)](docs/variables.md)
 * [Операторы (Operator)](docs/operators.md)
