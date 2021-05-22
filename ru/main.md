@@ -11,3 +11,4 @@
 * [Операторы (Operator)](docs/operators.md)
 * [Условия (Condition)](docs/conditions.md)
 * [Действия (Action)](docs/actions.md)
+## Примеры
