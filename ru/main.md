@@ -6,7 +6,7 @@
 ## Документация
 * Типы блоков
 * Типы данных
-* Классы (Class)
+* [Классы (Class)](docs/classes.md)
 * Переменные (Variable)
 * [Операторы (Operator)](docs/operators.md)
 * [Условия (Condition)](docs/conditions.md)
