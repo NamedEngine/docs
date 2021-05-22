@@ -10,4 +10,4 @@
 * Переменные (Variable)
 * Операторы (Operator)
 * Условия (Condition)
-* Действия (Action)
+* [Действия (Action)](docs/actions.md)
