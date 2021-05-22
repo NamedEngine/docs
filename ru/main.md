@@ -9,5 +9,5 @@
 * Классы (Class)
 * Переменные (Variable)
 * Операторы (Operator)
-* Условия (Condition)
+* [Условия (Condition)](docs/conditions.md)
 * [Действия (Action)](docs/actions.md)
