@@ -1,0 +1,71 @@
+<mxfile host="Electron" modified="2021-05-24T07:47:18.311Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" etag="RocoE4RBSS21cFkC_QLG" compressed="false" version="14.6.13" type="device">
+  <diagram id="bNXMdRGvISjMD62RQJI6" name="Page-1">
+    <mxGraphModel dx="1088" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SP7XgrKVFz1a2i9FjN_2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP7XgrKVFz1a2i9FjN_2-1" target="SP7XgrKVFz1a2i9FjN_2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SP7XgrKVFz1a2i9FjN_2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP7XgrKVFz1a2i9FjN_2-1" target="SP7XgrKVFz1a2i9FjN_2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SP7XgrKVFz1a2i9FjN_2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP7XgrKVFz1a2i9FjN_2-1" target="SP7XgrKVFz1a2i9FjN_2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="LevelLoader" type="class" id="SP7XgrKVFz1a2i9FjN_2-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;comic=0;" vertex="1" parent="1">
+            <mxGeometry x="300" y="200" width="130" height="50" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SP7XgrKVFz1a2i9FjN_2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SP7XgrKVFz1a2i9FjN_2-2" target="SP7XgrKVFz1a2i9FjN_2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Interact" type="condition" id="SP7XgrKVFz1a2i9FjN_2-2">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;container=0;dropTarget=1;strokeColor=#b85450;comic=0;align=center;" vertex="1" parent="1">
+            <mxGeometry x="295" y="270" width="140" height="51" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Bool: Interactable" type="variable" id="SP7XgrKVFz1a2i9FjN_2-4">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;comic=0;align=center;" vertex="1" parent="1">
+            <mxGeometry x="460" y="200" width="140" height="51" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="true" type="parameter" id="SP7XgrKVFz1a2i9FjN_2-5">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=4;spacingRight=4;strokeColor=none;" vertex="1" parent="SP7XgrKVFz1a2i9FjN_2-4">
+            <mxGeometry y="26" width="140" height="25" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LoadLevel" type="action" id="SP7XgrKVFz1a2i9FjN_2-8">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;flipH=0;flipV=0;strokeColor=#82b366;comic=0;align=center;" vertex="1" parent="1">
+            <mxGeometry x="295" y="350" width="140" height="51" as="geometry">
+              <mxRectangle x="160" y="470" width="60" height="26" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="levelPath" type="parameter" id="SP7XgrKVFz1a2i9FjN_2-9">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=4;spacingRight=4;strokeColor=none;" vertex="1" parent="SP7XgrKVFz1a2i9FjN_2-8">
+            <mxGeometry y="26" width="140" height="25" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SP7XgrKVFz1a2i9FjN_2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SP7XgrKVFz1a2i9FjN_2-10" target="SP7XgrKVFz1a2i9FjN_2-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <object label="String: LevelToLoad" type="variable" id="SP7XgrKVFz1a2i9FjN_2-10">
+          <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;comic=0;align=center;" vertex="1" parent="1">
+            <mxGeometry x="130" y="200" width="140" height="51" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" type="parameter" id="SP7XgrKVFz1a2i9FjN_2-11">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=4;spacingRight=4;strokeColor=none;" vertex="1" parent="SP7XgrKVFz1a2i9FjN_2-10">
+            <mxGeometry y="26" width="140" height="25" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

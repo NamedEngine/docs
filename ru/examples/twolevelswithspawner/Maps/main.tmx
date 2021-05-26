@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="9">
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="64" source="objects.tsx"/>
+ <objectgroup id="5" name="CameraFrame level" visible="0" locked="1">
+  <object id="7" x="0" y="0" width="320" height="320">
+   <properties>
+    <property name="CameraMaxYSize" type="float" value="1000"/>
+    <property name="Class" value="CameraFrame"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="1" name="Tile layer 1" width="20" height="20" locked="1">
+  <data encoding="csv">
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+11,11,37,20,20,20,20,20,20,20,20,20,20,20,20,20,20,38,11,11,
+11,11,12,63,63,63,63,63,63,63,63,63,63,63,63,63,55,10,11,11,
+11,11,12,56,63,63,63,63,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,12,56,63,63,63,63,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,12,63,63,63,63,55,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,12,63,63,63,63,63,63,63,63,63,63,55,63,63,63,10,11,11,
+11,11,12,63,63,63,63,63,55,63,63,63,63,63,63,63,63,10,11,11,
+20,20,21,63,63,63,63,63,63,63,63,63,63,63,63,63,63,19,20,38,
+63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,10,
+63,63,63,63,55,71,63,63,63,63,55,63,63,63,65,63,63,63,69,10,
+63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,10,
+2,2,3,63,63,63,63,63,63,63,63,63,63,63,63,63,63,1,2,47,
+11,11,12,63,63,63,63,63,63,63,63,63,63,63,63,55,63,10,11,11,
+11,11,12,48,63,63,63,55,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,12,52,63,63,63,63,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,12,52,52,63,63,63,63,63,63,55,63,63,63,63,63,10,11,11,
+11,11,12,52,52,48,48,63,63,63,63,63,63,63,63,63,63,10,11,11,
+11,11,46,2,2,2,2,2,2,2,2,2,2,2,2,2,2,47,11,11,
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+</data>
+ </layer>
+ <objectgroup id="2" name="Objects">
+  <object id="1" name="Right Gate" gid="64" x="272" y="192" width="16" height="48">
+   <properties>
+    <property name="Class" value="Slider"/>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="DeltaX" type="float" value="0"/>
+    <property name="DeltaY" type="float" value="-48"/>
+    <property name="MoveTime" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="2" name="Left Gate" gid="64" x="32" y="192" width="16" height="48">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="3" name="Opener" gid="36" x="224" y="192" width="16" height="16">
+   <properties>
+    <property name="Class" value="SliderTrigger"/>
+    <property name="SliderName" value="Right Gate"/>
+   </properties>
+  </object>
+  <object id="4" name="2 level loader" gid="36" x="80" y="192" width="16" height="16">
+   <properties>
+    <property name="Class" value="LevelLoader"/>
+    <property name="LevelToLoad" value="Maps/second.tmx"/>
+   </properties>
+  </object>
+  <object id="5" name="Reloader" gid="36" x="288" y="192" width="16" height="16">
+   <properties>
+    <property name="Class" value="LevelLoader"/>
+    <property name="LevelToLoad" value="Maps/main.tmx"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Player layer">
+  <object id="6" name="Player" gid="67" x="128" y="160.667" width="15" height="31">
+   <properties>
+    <property name="AnimationTime" type="float" value="0.5"/>
+    <property name="Class" value="TopDownPlayer"/>
+    <property name="MoveAnimationDown" value="Sprites/PlayerAnimation"/>
+    <property name="TopDownSpeed" type="float" value="64"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Tile layer 2" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

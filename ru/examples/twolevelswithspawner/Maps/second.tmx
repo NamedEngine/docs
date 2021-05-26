@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="10" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="5">
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="64" source="objects.tsx"/>
+ <objectgroup id="2" name="CameraFrame level" locked="1">
+  <object id="4" x="0" y="0" width="160" height="480">
+   <properties>
+    <property name="CameraMaxYSize" type="float" value="1000"/>
+    <property name="Class" value="CameraFrame"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="1" name="Tile layer" width="10" height="30" locked="1">
+  <data encoding="csv">
+11,11,11,11,11,11,11,11,11,11,
+40,37,20,20,20,20,20,20,38,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,66,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,55,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+39,12,63,63,63,63,63,55,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,39,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,55,63,63,63,63,10,11,
+40,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,55,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,40,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,55,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,63,10,11,
+11,12,63,63,63,63,63,48,10,39,
+11,46,2,2,2,2,2,2,47,11,
+11,11,11,11,11,11,11,11,11,11
+</data>
+ </layer>
+ <objectgroup id="3" name="Objects" locked="1">
+  <object id="1" name="Spawner" gid="70" x="48" y="80" width="16" height="16">
+   <properties>
+    <property name="Class" value="Spawner"/>
+    <property name="ObjectName" value="projectile"/>
+   </properties>
+  </object>
+  <object id="2" name="1 level loader" gid="36" x="96" y="80" width="16" height="16">
+   <properties>
+    <property name="Class" value="LevelLoader"/>
+    <property name="LevelToLoad" value="Maps/main.tmx"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Player level">
+  <object id="3" name="Player" gid="67" x="70.8913" y="80.7034" width="15" height="31">
+   <properties>
+    <property name="AnimationTime" type="float" value="0.5"/>
+    <property name="Class" value="TopDownPlayer"/>
+    <property name="MoveAnimationDown" value="Sprites/PlayerAnimation"/>
+    <property name="TopDownSpeed" type="float" value="64"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

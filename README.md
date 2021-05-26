@@ -3,5 +3,5 @@
 NamedEngine user documentation
 
 Choose your language:
-* **English version**
-* [**Russian version**](ru/main.md)
+* **English version** (Work In Progress)
+* [**Russian version**](ru/README.md)

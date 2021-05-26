@@ -1,4 +1,5 @@
 # Оглавление
+### [К выбору языка](../README.md)
 ## Руководства
 * [Руководство по установке NamedEngine и работе с ним](guides/install.md)
 * [Руководство по работе с Tiled Map Editor](guides/tiled.md)
@@ -12,3 +13,4 @@
 * [Условия (Condition)](docs/conditions.md)
 * [Действия (Action)](docs/actions.md)
 ## Примеры
+* [Два уровня со спавнером](examples/twolevelsspawner.md)
